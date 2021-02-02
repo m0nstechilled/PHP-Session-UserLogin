@@ -69,17 +69,17 @@ class user {
 		
 		$checked 		= false;
 		
-		$username 				= trim($_POST['username']);
-		$email 					= trim($_POST['email']);
-		$password 				= trim($_POST['password']);
+		$username 			= trim($_POST['username']);
+		$email 				= trim($_POST['email']);
+		$password 			= trim($_POST['password']);
 		$passwordCheck 			= trim($_POST['password2']);
-		$firstname 				= trim($_POST['firstname']);
-		$lastname 				= trim($_POST['lastname']);
-		$birthday 				= trim($_POST['birthday']);
-		$checked  				= trim($_POST['terms']);
+		$firstname 			= trim($_POST['firstname']);
+		$lastname 			= trim($_POST['lastname']);
+		$birthday 			= trim($_POST['birthday']);
+		$checked  			= trim($_POST['terms']);
 
 		$newUsername 			= filter_var($username, FILTER_SANITIZE_STRING);
-		$newEmail 				= filter_var($email, FILTER_SANITIZE_STRING);
+		$newEmail 			= filter_var($email, FILTER_SANITIZE_STRING);
 		$newPassword 			= filter_var($password, FILTER_SANITIZE_STRING);
 		$newPasswordCheck 		= filter_var($passwordCheck, FILTER_SANITIZE_STRING);
 		$newFirstname 			= filter_var($firstname, FILTER_SANITIZE_STRING);
@@ -131,7 +131,7 @@ class user {
 						
 						// Reserve ID in UsersAdv
 
-			            $servername = "localhost";$username = "root";$password = "worktroll911";$dbname = "trundle";
+			            		$servername = "localhost";$username = "USERNAME";$password = "PASSWORD";$dbname = "DATABASE";
 
 						// Create connection
 						$conn = new mysqli($servername, $username, $password, $dbname);
@@ -154,7 +154,7 @@ class user {
 
 						// Reserve ID in UsersSettings
 
-			            $servername = "localhost";$username = "root";$password = "worktroll911";$dbname = "trundle";
+			            		$servername = "localhost";$username = "USERNAME";$password = "PASSWORD";$dbname = "DATABASE";
 
 						// Create connection
 						$conn = new mysqli($servername, $username, $password, $dbname);
