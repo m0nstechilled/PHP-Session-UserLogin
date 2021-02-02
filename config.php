@@ -1,9 +1,9 @@
 <?php
 
 define('HOST', '127.0.0.1');
-define('DB', 'trundle');
+define('DB', 'DATABASE');
 
-define('USERNAME', 'root');
-define('PASSWORD', 'worktroll911');
+define('USERNAME', 'USERNAME');
+define('PASSWORD', 'PASSWORD');
 
 ?>
